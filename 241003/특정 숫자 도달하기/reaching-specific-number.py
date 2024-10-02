@@ -10,4 +10,4 @@ for i in range(0, len(arr)):
         sum += int(arr[i])
     cnt += 1
 avg = sum / cnt
-print(sum, avg)
+print(sum, round(avg, 1))
