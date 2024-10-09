@@ -11,6 +11,6 @@ for i in range(0, n):
         if maxVal == arr[-1]:
             print(-1)
             break
-    else:
+    elif arr.count(maxVal) == 1:
         print(maxVal)
         break;
