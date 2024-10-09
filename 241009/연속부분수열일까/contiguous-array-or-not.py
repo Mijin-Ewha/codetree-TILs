@@ -11,7 +11,7 @@ for i in range(0, alength):
     if a[i] == b[0]:
         state = "Yes"
         for k in range(0, blength):
-            if i + k > alength:
+            if i + k >= alength:
                 state = "No"
                 break
             if a[i + k] != b[k]:
