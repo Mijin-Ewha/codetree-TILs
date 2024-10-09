@@ -10,6 +10,9 @@ state = "Yes"
 for i in range(0, len(a)):
     if a[i] == b[0]:
         for k in range(1, blength):
+            if i + k > alength:
+                state = "No"
+                break;
             if a[i + k] != b[k]:
                 state = "No"
                 break
