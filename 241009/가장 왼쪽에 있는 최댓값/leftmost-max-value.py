@@ -5,7 +5,7 @@ temp = sorted(arr)
 temp.reverse()
 
 maxVal = temp[0]
-index = n
+index = n + 1
 count = 0
 for i in range(n):
     if index == 1:
