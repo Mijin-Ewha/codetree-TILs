@@ -7,9 +7,8 @@ b = list(map(int, input().split()))
 
 state = "Yes"
 
-for i in range(0, len(a)):
-    if a[i] == b[0]:
-        for k in range(1, blength):
+for i in range(alength):
+        for k in range(blength):
             if i + k > alength:
                 state = "No"
                 break;
