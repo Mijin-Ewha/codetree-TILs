@@ -9,10 +9,13 @@ state = "Yes"
 
 for i in range(0, alength):
     if a[i] == b[0]:
+        state = "Yes"
         for k in range(0, blength):
             if a[i + k] != b[k]:
                 state = "No"
                 break
         if state == "Yes":
             break  # 외부 루프를 종료
+    else:
+        state = "No"
 print(state)
