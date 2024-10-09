@@ -5,7 +5,7 @@ arr.sort(reverse=True)
 
 maxVal = arr[0]
 
-for i in range(1, n):
+for i in range(0, n):
     if arr.count(maxVal) != 1:
         maxVal = arr[arr.count(maxVal)]
         if maxVal == arr[-1]:
