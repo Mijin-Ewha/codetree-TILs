@@ -8,12 +8,11 @@ b = list(map(int, input().split()))
 state = "Yes"
 
 for i in range(0, alength):
+    if a[i] == b[0]:
         for k in range(0, blength):
-            if i + k > alength:
-                state = "No"
             if a[i + k] != b[k]:
                 state = "No"
                 break
-            else:
-                state = "Yes"
+        if state == "No":
+            break  # 외부 루프를 종료
 print(state)
