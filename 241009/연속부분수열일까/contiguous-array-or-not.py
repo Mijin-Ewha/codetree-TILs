@@ -7,7 +7,7 @@ b = list(map(int, input().split()))
 
 state = "Yes"
 
-for i in range(len(a)):
+for i in range(0, len(a)):
     if a[i] == b[0]:
         for k in range(1, blength):
             if a[i + k] != b[k]:
