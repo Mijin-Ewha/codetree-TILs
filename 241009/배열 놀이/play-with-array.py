@@ -16,6 +16,7 @@ for i in range(q):
                 break
         if index == -1:
             print(0)
+        index = -1
     else:
         for j in range(arrQ[1] - 1, arrQ[2]):
             print(arrN[j], end=" ")
