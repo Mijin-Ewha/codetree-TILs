@@ -13,6 +13,6 @@ for i in range(0, alength):
             if a[i + k] != b[k]:
                 state = "No"
                 break
-        if state == "No":
+        if state == "Yes":
             break  # 외부 루프를 종료
 print(state)
