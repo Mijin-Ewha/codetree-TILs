@@ -4,6 +4,7 @@ arr = list(map(int, input().split()))
 temp = sorted(arr)
 
 minIndex = arr.index(temp[0])
+minVal = temp[0]
 maxVal = 0
 state = 0
 for i in range(minIndex, n):
@@ -18,5 +19,5 @@ for i in range(minIndex, n):
 if state == 1:
     print(result)
 else:
-    result = maxVal - temp[0]
+    result = maxVal - minVal
     print(result)
