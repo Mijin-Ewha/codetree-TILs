@@ -6,8 +6,8 @@ temp = sorted(arr)
 minIndex = arr.index(temp[0])
 maxVal = 0
 state = 0
-for i in range(minIndex, len(arr)):
-    if minIndex == len(arr):
+for i in range(minIndex, n):
+    if minIndex == n:
         result = 0
         state = 1
         break
