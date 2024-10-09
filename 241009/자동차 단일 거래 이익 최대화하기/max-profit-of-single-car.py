@@ -1,23 +1,15 @@
+# 변수 선언 및 입력:
 n = int(input())
-arr = list(map(int, input().split()))
+price = list(map(int, input().split()))
 
-temp = sorted(arr)
+# 배열을 앞에서부터 순회하며 사는 시점의 후보를 선택합니다
+max_profit = 0
+for i in range(n):
+    # 사는 시점의 다음 해부터 순회하며 파는 시점의 후보를 선택합니다
+    for j in range(i + 1, n):
+        profit = price[j] - price[i]
 
-minIndex = arr.index(temp[0])
-minVal = temp[0]
-maxVal = 0
-state = 0
-for i in range(minIndex, n):
-    if minIndex == n:
-        result = 0
-        state = 1
-        break
-    else:
-        if maxVal < arr[i]:
-            maxVal = arr[i]
-
-if state == 1:
-    print(result)
-else:
-    result = maxVal - minVal
-    print(result)
+        if profit > max_profit:
+            max_profit = profit
+    
+print(max_profit)
