@@ -15,4 +15,6 @@ for i in range(alength):
             if a[i + k] != b[k]:
                 state = "No"
                 break
+            else:
+                state = "Yes"
 print(state)
