@@ -13,6 +13,7 @@ for i in range(0, alength):
         for k in range(0, blength):
             if i + k > alength:
                 state = "No"
+                break
             if a[i + k] != b[k]:
                 state = "No"
                 break
