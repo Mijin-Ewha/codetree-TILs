@@ -20,3 +20,4 @@ for i in range(q):
     else:
         for j in range(arrQ[1] - 1, arrQ[2]):
             print(arrN[j], end=" ")
+        print()
