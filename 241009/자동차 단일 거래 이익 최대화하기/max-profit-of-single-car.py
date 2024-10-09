@@ -4,7 +4,7 @@ arr = list(map(int, input().split()))
 temp = sorted(arr)
 
 minIndex = arr.index(temp[0])
-maxVal = temp[-1]
+maxVal = 0
 state = 0
 for i in range(minIndex, len(arr)):
     if minIndex == len(arr):
