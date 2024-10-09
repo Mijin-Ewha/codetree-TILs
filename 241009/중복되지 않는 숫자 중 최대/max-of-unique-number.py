@@ -8,7 +8,7 @@ maxVal = arr[0]
 for i in range(1, n):
     if arr.count(maxVal) != 1:
         maxVal = arr[arr.count(maxVal)]
-        if maxVal == arr[1]:
+        if maxVal == arr[-1]:
             print(-1)
             break
     else:
