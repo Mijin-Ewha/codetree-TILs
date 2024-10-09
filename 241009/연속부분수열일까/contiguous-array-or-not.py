@@ -9,8 +9,8 @@ state = "Yes"
 
 for i in range(len(a)):
     if a[i] == b[0]:
-        for k in range(blength):
-            if a[i + k - 1] != b[k]:
+        for k in range(0, blength):
+            if a[i + k] != b[k]:
                 state = "No"
 
 print(state)
