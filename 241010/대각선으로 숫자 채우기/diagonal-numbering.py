@@ -20,7 +20,7 @@ elif n == 2:
             if i == 0 and j == 0:
                 print(result[0][0], end = " ")
             elif i == 0 and j > 0:
-                print(result[0][0] + (2 * j), end=" ")
+                print((2 * j), end=" ")
             else:
                 print(result[1][0] + (2 * j), end=" ")
         print()
