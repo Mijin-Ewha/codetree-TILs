@@ -23,7 +23,7 @@ elif n == 2:
                 print((2 * j), end=" ")
             elif i == 1 and j < m - 1:
                 print(result[1][0] + (2 * j), end=" ")
-            else
+            else:
                 print(n * m)
         print()
 elif m == 2:
