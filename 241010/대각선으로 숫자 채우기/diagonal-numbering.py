@@ -18,9 +18,9 @@ elif n == 2:
     for i in range(n):
         for j in range(m):
             if i == 0:
-                print(2 ** j, end=" ")
+                print(result[0][0] + (2 * j), end=" ")
             else:
-                print(result[1][0] + 2*(j), end=" ")
+                print(result[1][0] + (2 * j), end=" ")
         print()
 elif m == 2:
     result = [
