@@ -34,7 +34,7 @@ elif m == 2:
     for i in range(n):
         for j in range(m):
             if j == 0:
-                print(result[0][0] * 2*(j+1), end=" ")
+                print(2*(j+1), end=" ")
             else:
                 print(result[0][1] + 2*(j + 1), end=" ")
         print()
