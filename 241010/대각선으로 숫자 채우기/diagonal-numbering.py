@@ -8,6 +8,34 @@ if n == 1:
 elif m == 1:
     for i in range(n):
         print(i+1)
+elif n == 2:
+    result = [
+        [0 for _ in range(n)]
+        for _ in range(m)
+    ]
+    result[0][0] = 1
+    result[1][0] = 3
+    for i in range(n):
+        for j in range(m):
+            if i == 0:
+                print(result[0][0] * (j+1), end=" ")
+            else:
+                print(result[1][0] + 2*(j + 1), end=" ")
+        print()
+elif m == 2:
+    result = [
+        [0 for _ in range(n)]
+        for _ in range(m)
+    ]
+    result[0][0] = 1
+    result[0][1] = 2
+    for i in range(n):
+        for j in range(m):
+            if j == 0:
+                print(result[0][0] * 2*(j+1), end=" ")
+            else:
+                print(result[0][1] + 2*(j + 1), end=" ")
+        print()
 else:
     result = [
         [0 for _ in range(n)]
@@ -40,8 +68,6 @@ else:
         for j in range(m):
             if j == 0 and i > 0 and n > 2:
                 result[i][j] = result[i-1][j] + i + 1
-            elif j == 0 and i > 0 and n == 2:
-                result[i][j] = result[i-1][j] + 2
             if result[i][j] == 0:
                 if j - 1 >= 0:
                     result[i][j] = result[i][j - 1] + arr3[i][j-1]
