@@ -82,8 +82,8 @@ m = arr[1]
 #         print()
 
 result = [
-        [0 for _ in range(n)]
-        for _ in range(m)
+        [0 for _ in range(m)]
+        for _ in range(n)
     ]
 
 cnt = 1;
