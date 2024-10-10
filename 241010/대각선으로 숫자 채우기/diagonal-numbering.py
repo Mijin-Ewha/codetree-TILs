@@ -5,8 +5,10 @@ m = arr[1]
 if n == 1:
     for i in range(m):
         print(i+1, end = " ")
-
-else: 
+elif m == 1:
+    for i in range(n):
+        print(i+1)
+else:
     result = [
         [0 for _ in range(n)]
         for _ in range(m)
