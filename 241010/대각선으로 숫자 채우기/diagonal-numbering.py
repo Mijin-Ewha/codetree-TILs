@@ -42,8 +42,8 @@ elif m == 2:
         print()
 else:
     result = [
-        [0 for _ in range(n)]
-        for _ in range(m)
+        [0 for _ in range(m)]
+        for _ in range(n)
     ]
     result[0][0] = 1
 
