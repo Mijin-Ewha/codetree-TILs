@@ -21,8 +21,10 @@ elif n == 2:
                 print(result[0][0], end = " ")
             elif i == 0 and j > 0:
                 print((2 * j), end=" ")
-            else:
+            elif i == 1 and j < m - 1:
                 print(result[1][0] + (2 * j), end=" ")
+            else
+                print(n * m)
         print()
 elif m == 2:
     result = [
