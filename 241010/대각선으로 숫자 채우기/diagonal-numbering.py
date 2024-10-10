@@ -2,45 +2,45 @@ arr = list(map(int, input().split()))
 n = arr[0]
 m = arr[1]
 
-# if n == 1:
-#     for i in range(m):
-#         print(i+1, end = " ")
-# elif m == 1:
-#     for i in range(n):
-#         print(i+1)
-# elif n == 2:
-#     result = [
-#         [0 for _ in range(n)]
-#         for _ in range(m)
-#     ]
-#     result[0][0] = 1
-#     result[1][0] = 3
-#     for i in range(n):
-#         for j in range(m):
-#             if i == 0 and j == 0:
-#                 print(result[0][0], end = " ")
-#             elif i == 0 and j > 0:
-#                 print((2 * j), end=" ")
-#             elif i == 1 and j < m - 1:
-#                 print(result[1][0] + (2 * j), end=" ")
-#             else:
-#                 print(n * m)
-#         print()
-# elif m == 2:
-#     result = [
-#         [0 for _ in range(m)]
-#         for _ in range(n)
-#     ]
-#     result[0][0] = 1
-#     result[0][1] = 2
-#     for i in range(n):
-#         for j in range(m):
-#             if j == 0:
-#                 print(2*(j+1), end=" ")
-#             else:
-#                 print(result[0][1] + 2*(j + 1), end=" ")
-#         print()
-# else:
+if n == 1:
+    for i in range(m):
+        print(i+1, end = " ")
+elif m == 1:
+    for i in range(n):
+        print(i+1)
+elif n == 2:
+    result = [
+        [0 for _ in range(n)]
+        for _ in range(m)
+    ]
+    result[0][0] = 1
+    result[1][0] = 3
+    for i in range(n):
+        for j in range(m):
+            if i == 0 and j == 0:
+                print(result[0][0], end = " ")
+            elif i == 0 and j > 0:
+                print((2 * j), end=" ")
+            elif i == 1 and j < m - 1:
+                print(result[1][0] + (2 * j), end=" ")
+            else:
+                print(n * m)
+        print()
+elif m == 2:
+    result = [
+        [0 for _ in range(m)]
+        for _ in range(n)
+    ]
+    result[0][0] = 1
+    result[0][1] = 2
+    for i in range(n):
+        for j in range(m):
+            if j == 0:
+                print(2*(j+1), end=" ")
+            else:
+                print(result[0][1] + 2*(j + 1), end=" ")
+        print()
+else:
     result = [
         [0 for _ in range(n)]
         for _ in range(m)
