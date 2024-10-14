@@ -1,20 +1,24 @@
 def leap_year(y):
-    if y % 4 == 0:
-        if y % 100 == 0:
-            if y % 400 == 0:
-                return True
-            else:
-                return False
-        else:
-            return False
+    if y % 4 == 0 and y % 100 == 0 and y % 400 == 0:
+        return True
+    elif y % 4 == 0 and y % 100 == 0 and y % 400 != 0:
+        return False
+    elif y % 4 == 0 and y % 100 == 0:
+        return False
+    elif y % 4 == 0 and y % 100 != 0:
+        return True
     else:
         return False
 
 def day_exist(y, m, d):
     if m > 12:
         return False
-    if (leap_year(y) and m == 2 and d > 28) or (leap_year(y) and m == 2 and d > 29):
-        return False
+    if leap_year(y) == True:
+        if m == 2 and d > 29:
+            return False
+    else:
+        if m == 2 and d > 28:
+            return False
     if d > 31:
         return False
     elif (m == 2 or m == 4 or m == 6 or m == 9 or m == 11) and d > 30:
