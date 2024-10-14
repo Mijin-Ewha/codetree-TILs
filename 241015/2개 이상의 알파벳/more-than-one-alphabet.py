@@ -4,7 +4,6 @@ def alpha(a):
         for j in range(len(a)):
             if i != j and a[i] != a[j]:
                 cnt += 1
-            break
     return cnt
 
 arr = input()
