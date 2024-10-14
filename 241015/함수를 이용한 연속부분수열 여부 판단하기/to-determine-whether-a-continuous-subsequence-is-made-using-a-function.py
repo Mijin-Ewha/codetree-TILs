@@ -13,7 +13,7 @@ def arr_Find(n1Arr, n2Arr, n1, n2):
                     if n1Arr[i + k] != n2Arr[k]:
                         state = "No"
                         break;
-                state = "Yes"
+                    state = "Yes"
     return state
 
 print(arr_Find(n1Arr, n2Arr, n1, n2))
