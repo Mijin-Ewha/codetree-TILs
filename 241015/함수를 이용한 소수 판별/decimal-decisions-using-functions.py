@@ -1,5 +1,7 @@
 def primeSum(a, b):
     rlt = 0
+    if a == 1 and b == 1:
+        return 0
     for i in range(a, b+1):
         if is_prime(i) == True:
             rlt += i
