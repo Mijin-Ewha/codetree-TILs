@@ -4,7 +4,7 @@ def cal(a, o, c):
     elif o == '-':
         return a - c
     elif o == '/':
-        return a / c
+        return int(a / c)
     else:
         return a * c
 
