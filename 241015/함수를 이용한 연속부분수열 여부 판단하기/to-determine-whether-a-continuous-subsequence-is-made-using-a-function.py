@@ -8,10 +8,9 @@ n2Arr = list(map(int, input().split()))
 def arr_Find(n1Arr, n2Arr, n1, n2):
     state = "Yes"
     for i in range(n1):
-        for j in range(n2):
-            if n1Arr[i] == n2Arr[j]:
+            if n1Arr[i] == n2Arr[0]:
                 for k in range(n2):
-                    if n1Arr[i + k] != n2Arr[j + k]:
+                    if n1Arr[i + k] != n2Arr[k]:
                         state = "No"
                         break;
                 state = "Yes"
