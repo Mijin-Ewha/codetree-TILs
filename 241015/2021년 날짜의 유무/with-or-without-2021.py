@@ -8,6 +8,8 @@ def day_exist(m, d):
             state = "No"
         elif (int(m) == 4 or int(m) == 6 or int(m) == 9 or int(m) == 11) and int(d) > 30:
             state = "No"
+        elif int(m) > 12:
+            state = "No"
     return state
 
 arr = input().split()
