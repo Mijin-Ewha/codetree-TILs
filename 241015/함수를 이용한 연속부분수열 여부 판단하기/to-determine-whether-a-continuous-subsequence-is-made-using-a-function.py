@@ -14,6 +14,7 @@ def arr_Find(n1Arr, n2Arr, n1, n2):
                         state = "No"
                         break;
                     state = "Yes"
+                    return state
     return state
 
 print(arr_Find(n1Arr, n2Arr, n1, n2))
