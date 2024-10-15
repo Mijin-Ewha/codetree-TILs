@@ -2,6 +2,7 @@ a = input()
 b = input()
 
 def loca(a, b):
-    return a.index(b)
+    index = a.find(b)
+    return index
 
 print(loca(a,b))
